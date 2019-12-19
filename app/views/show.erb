@@ -1,0 +1,9 @@
+<h1>This is a show page for <%= @movie.title %>!</h1>
+
+<h2>Director:</h2>
+<%= @movie.director.name %>
+
+<h2>Actors:</h2>
+<% @movie.actors.each do |actor| %>
+  <%= actor.name %>
+<% end %>
